@@ -33,9 +33,21 @@ void render() {
             {374.0, 302.0}
     };
 
+    // Poligono 3
+    Color fillColor3(255, 0, 0);         // Relleno rojo
+    Color borderColor3(255, 255, 255);  // Borde blanco
+    std::vector<Vertex> poligono3{
+            {377.0, 249.0},
+            {411.0, 197.0},
+            {436.0, 249.0}
+    };
+
+    framebuffer.drawPolygon(poligono3, fillColor3, borderColor3);
+
 
     framebuffer.drawPolygon(poligono1, fillColor, borderColor);
     framebuffer.drawPolygon(vertices, fillColor2, borderColor2);
+    framebuffer.drawPolygon(poligono3, fillColor3, borderColor3);
 
     framebuffer.renderBuffer();
 }
