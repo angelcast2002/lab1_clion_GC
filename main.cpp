@@ -66,12 +66,20 @@ void render() {
             {466.0, 180.0}
     };
 
-
+    // Poligono 5
+    Color borderColor5(255, 255, 255);  // Borde blanco
+    std::vector<Vertex> poligono5{
+            {682.0, 175.0},
+            {708.0, 120.0},
+            {735.0, 148.0},
+            {739.0, 170.0}
+    };
 
     framebuffer.drawPolygon(poligono1, fillColor, borderColor);
     framebuffer.drawPolygon(vertices, fillColor2, borderColor2);
     framebuffer.drawPolygon(poligono3, fillColor3, borderColor3);
     framebuffer.drawPolygon(poligono4, fillColor4, borderColor4);
+    framebuffer.drawPolygon(poligono5, clearColor, borderColor5);
 
     framebuffer.renderBuffer();
 }
