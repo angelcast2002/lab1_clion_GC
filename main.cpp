@@ -22,7 +22,20 @@ void render() {
             {193.0, 383.0}
     };
 
+    // Poligono 2
+
+    Color fillColor2(0, 0, 255);       // Relleno azul
+    Color borderColor2(255, 255, 255); // Borde blanco
+    std::vector<Vertex> vertices{
+            {321.0, 335.0},
+            {288.0, 286.0},
+            {339.0, 251.0},
+            {374.0, 302.0}
+    };
+
+
     framebuffer.drawPolygon(poligono1, fillColor, borderColor);
+    framebuffer.drawPolygon(vertices, fillColor2, borderColor2);
 
     framebuffer.renderBuffer();
 }
