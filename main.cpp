@@ -42,12 +42,36 @@ void render() {
             {436.0, 249.0}
     };
 
-    framebuffer.drawPolygon(poligono3, fillColor3, borderColor3);
+    // Poligono 4
+    Color fillColor4(0, 255, 0);         // Relleno verde
+    Color borderColor4(255, 255, 255);  // Borde blanco
+    std::vector<Vertex> poligono4{
+            {413.0, 177.0},
+            {448.0, 159.0},
+            {502.0, 88.0},
+            {553.0, 53.0},
+            {535.0, 36.0},
+            {676.0, 37.0},
+            {660.0, 52.0},
+            {750.0, 145.0},
+            {761.0, 179.0},
+            {672.0, 192.0},
+            {659.0, 214.0},
+            {615.0, 214.0},
+            {632.0, 230.0},
+            {580.0, 230.0},
+            {597.0, 215.0},
+            {552.0, 214.0},
+            {517.0, 144.0},
+            {466.0, 180.0}
+    };
+
 
 
     framebuffer.drawPolygon(poligono1, fillColor, borderColor);
     framebuffer.drawPolygon(vertices, fillColor2, borderColor2);
     framebuffer.drawPolygon(poligono3, fillColor3, borderColor3);
+    framebuffer.drawPolygon(poligono4, fillColor4, borderColor4);
 
     framebuffer.renderBuffer();
 }
